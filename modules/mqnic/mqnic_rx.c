@@ -307,6 +307,7 @@ int mqnic_process_rx_cq(struct mqnic_cq *cq, int napi_budget)
 	int done = 0;
 	int budget = napi_budget;
 	u32 len;
+	pr_err("got here!\n");
 
 	if (unlikely(!priv || !priv->port_up))
 		return done;
